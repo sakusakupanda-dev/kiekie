@@ -7,38 +7,36 @@
 import * as React from "react";
 import { GridProps, TextFieldProps } from "@aws-amplify/ui-react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { Home } from "../models";
 export declare type ValidationResponse = {
     hasError: boolean;
     errorMessage?: string;
 };
 export declare type ValidationFunction<T> = (value: T, validationResponse: ValidationResponse) => ValidationResponse | Promise<ValidationResponse>;
-export declare type HomeUpdateFormInputValues = {
+export declare type NewForm100InputValues = {
     address?: string;
     image_url?: string;
     price?: number;
 };
-export declare type HomeUpdateFormValidationValues = {
+export declare type NewForm100ValidationValues = {
     address?: ValidationFunction<string>;
     image_url?: ValidationFunction<string>;
     price?: ValidationFunction<number>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type HomeUpdateFormOverridesProps = {
-    HomeUpdateFormGrid?: PrimitiveOverrideProps<GridProps>;
+export declare type NewForm100OverridesProps = {
+    NewForm100Grid?: PrimitiveOverrideProps<GridProps>;
     address?: PrimitiveOverrideProps<TextFieldProps>;
     image_url?: PrimitiveOverrideProps<TextFieldProps>;
     price?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
-export declare type HomeUpdateFormProps = React.PropsWithChildren<{
-    overrides?: HomeUpdateFormOverridesProps | undefined | null;
+export declare type NewForm100Props = React.PropsWithChildren<{
+    overrides?: NewForm100OverridesProps | undefined | null;
 } & {
-    id?: string;
-    home?: Home;
-    onSubmit?: (fields: HomeUpdateFormInputValues) => HomeUpdateFormInputValues;
-    onSuccess?: (fields: HomeUpdateFormInputValues) => void;
-    onError?: (fields: HomeUpdateFormInputValues, errorMessage: string) => void;
-    onChange?: (fields: HomeUpdateFormInputValues) => HomeUpdateFormInputValues;
-    onValidate?: HomeUpdateFormValidationValues;
+    clearOnSuccess?: boolean;
+    onSubmit?: (fields: NewForm100InputValues) => NewForm100InputValues;
+    onSuccess?: (fields: NewForm100InputValues) => void;
+    onError?: (fields: NewForm100InputValues, errorMessage: string) => void;
+    onChange?: (fields: NewForm100InputValues) => NewForm100InputValues;
+    onValidate?: NewForm100ValidationValues;
 } & React.CSSProperties>;
-export default function HomeUpdateForm(props: HomeUpdateFormProps): React.ReactElement;
+export default function NewForm100(props: NewForm100Props): React.ReactElement;
