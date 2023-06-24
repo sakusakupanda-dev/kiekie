@@ -8,6 +8,3 @@ export { default as Desktop1 } from "./Desktop1";
 export { default as Desktop2 } from "./Desktop2";
 export { default as Desktop3 } from "./Desktop3";
 export { default as studioTheme } from "./studioTheme";
-export { default as NewForm100 } from "./NewForm100";
-export { default as NewForm101 } from "./NewForm101";
-export { default as HomeUpdateForm } from "./HomeUpdateForm";

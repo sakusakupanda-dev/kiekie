@@ -9,11 +9,24 @@
       "UnauthRoleName": "amplify-kieapp-staging-15329-unauthRole",
       "StackName": "amplify-kieapp-staging-15329",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:711556954185:stack/amplify-kieapp-staging-15329/f3cb9790-f5e7-11ed-be88-0ae7760abda9",
-      "AmplifyAppId": "d39svgwej6ux5g"
+      "AmplifyAppId": "d39svgwej6ux5g",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-kieapp-staging-15329-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
         "kieapp": {}
+      },
+      "function": {
+        "kieapp83b839b2": {
+          "deploymentBucketName": "amplify-kieapp-staging-15329-deployment",
+          "s3Key": "amplify-builds/kieapp83b839b2-46767758566e655a6550-build.zip"
+        }
+      },
+      "storage": {
+        "sakuchanAppUser": {}
+      },
+      "api": {
+        "sakumokiAppUser": {}
       }
     }
   }
