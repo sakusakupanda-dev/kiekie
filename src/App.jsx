@@ -7,6 +7,7 @@ import LoginPage from "./LoginPage";
 import UserEdit from "./UserEdit";
 import MyPage from "./MyPage";
 import TodoPage from "./TodoPage";
+import MainLayout from "./Layout";
 
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
@@ -14,6 +15,7 @@ Amplify.configure(awsExports);
 function App({ signOut, user }) {
   return (
     <BrowserRouter>
+    <MainLayout>
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/blank" element={<BlankPage />} />
@@ -21,6 +23,7 @@ function App({ signOut, user }) {
         <Route path="/my_page" element={<MyPage />} />
         <Route path="/todo_page" element={<TodoPage />} />
       </Routes>
+      </MainLayout>
     </BrowserRouter>
   );
 }
