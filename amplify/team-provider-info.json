@@ -16,6 +16,7 @@
       "auth": {
         "kieapp": {}
       },
+<<<<<<< HEAD
       "api": {
         "amplifyhomes": {},
         "sakumokiAppUser": {},
@@ -24,15 +25,27 @@
       "storage": {
         "sakuchanAppUser": {}
       },
+=======
+>>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
       "function": {
         "kieapp83b839b2": {
           "deploymentBucketName": "amplify-kieapp-staging-15329-deployment",
           "s3Key": "amplify-builds/kieapp83b839b2-46767758566e655a6550-build.zip"
+<<<<<<< HEAD
         },
         "sakumokiAppuser": {
           "deploymentBucketName": "amplify-kieapp-staging-15329-deployment",
           "s3Key": "amplify-builds/sakumokiAppuser-61714254396445774c47-build.zip"
         }
+=======
+        }
+      },
+      "storage": {
+        "sakuchanAppUser": {}
+      },
+      "api": {
+        "sakumokiAppUser": {}
+>>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
       }
     }
   }

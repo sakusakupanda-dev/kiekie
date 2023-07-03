@@ -1,24 +1,18 @@
 {
   "api": {
-    "amplifyhomes": {
-      "dependsOn": [],
-      "output": {
-        "authConfig": {
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "AWS_IAM"
-            }
+    "sakumokiAppUser": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
           ],
-          "defaultAuthentication": {
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 30,
-              "description": "api key description"
-            },
-            "authenticationType": "API_KEY"
-          }
+          "category": "function",
+          "resourceName": "kieapp83b839b2"
         }
-      },
+      ],
       "providerPlugin": "awscloudformation",
+<<<<<<< HEAD
       "service": "AppSync"
     },
     "apice9567c9": {
@@ -47,6 +41,8 @@
         }
       ],
       "providerPlugin": "awscloudformation",
+=======
+>>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
       "service": "API Gateway"
     }
   },
@@ -86,11 +82,14 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+<<<<<<< HEAD
     },
     "sakumokiAppuser": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+=======
+>>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
     }
   },
   "parameters": {
@@ -109,6 +108,7 @@
           "resourceName": "kieapp83b839b2"
         }
       ]
+<<<<<<< HEAD
     },
     "AMPLIFY_function_sakumokiAppuser_deploymentBucketName": {
       "usedBy": [
@@ -125,6 +125,8 @@
           "resourceName": "sakumokiAppuser"
         }
       ]
+=======
+>>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
     }
   },
   "storage": {
