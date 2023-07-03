@@ -20,6 +20,34 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
+    },
+    "apice9567c9": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "sakumokiAppuser"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "sakumokiAppUser": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "kieapp83b839b2"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "auth": {
@@ -51,6 +79,58 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "kieapp83b839b2": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "sakumokiAppuser": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_kieapp83b839b2_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "kieapp83b839b2"
+        }
+      ]
+    },
+    "AMPLIFY_function_kieapp83b839b2_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "kieapp83b839b2"
+        }
+      ]
+    },
+    "AMPLIFY_function_sakumokiAppuser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sakumokiAppuser"
+        }
+      ]
+    },
+    "AMPLIFY_function_sakumokiAppuser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sakumokiAppuser"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "sakuchanAppUser": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

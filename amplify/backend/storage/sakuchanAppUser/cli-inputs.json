@@ -1,0 +1,10 @@
+{
+  "resourceName": "sakuchanAppUser",
+  "tableName": "sakuchanAppUser",
+  "partitionKey": {
+    "fieldName": "userid",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
