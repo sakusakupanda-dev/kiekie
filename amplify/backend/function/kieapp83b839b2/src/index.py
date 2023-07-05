@@ -15,11 +15,7 @@ def handler(event, context):
     dynamodb = boto3.resource('dynamodb')
 
     # Get the Todo table.
-<<<<<<< HEAD
-    app_table = dynamodb.Table('http-crud-training-kie.sakuomochi')
-=======
     app_table = dynamodb.Table('sakumotoAppUser-master')
->>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
 
     # If the request is a POST request, do the following.
     if event['httpMethod'] == 'POST':

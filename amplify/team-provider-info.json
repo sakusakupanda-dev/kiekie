@@ -16,36 +16,21 @@
       "auth": {
         "kieapp": {}
       },
-<<<<<<< HEAD
-      "api": {
-        "amplifyhomes": {},
-        "sakumokiAppUser": {},
-        "apice9567c9": {}
-      },
-      "storage": {
-        "sakuchanAppUser": {}
-      },
-=======
->>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
       "function": {
         "kieapp83b839b2": {
           "deploymentBucketName": "amplify-kieapp-staging-15329-deployment",
-          "s3Key": "amplify-builds/kieapp83b839b2-46767758566e655a6550-build.zip"
-<<<<<<< HEAD
+          "s3Key": "amplify-builds/kieapp83b839b2-43726d68566f72656e7a-build.zip"
         },
         "sakumokiAppuser": {
           "deploymentBucketName": "amplify-kieapp-staging-15329-deployment",
           "s3Key": "amplify-builds/sakumokiAppuser-61714254396445774c47-build.zip"
         }
-=======
-        }
-      },
-      "storage": {
-        "sakuchanAppUser": {}
       },
       "api": {
         "sakumokiAppUser": {}
->>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
+      },
+      "storage": {
+        "sakuchanAppUser": {}
       }
     }
   }

@@ -1,18 +1,5 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-<<<<<<< HEAD
-    "amplifyhomes": {
-      "GraphQLAPIEndpointOutput": "string",
-      "GraphQLAPIIdOutput": "string",
-      "GraphQLAPIKeyOutput": "string"
-    },
-    "apice9567c9": {
-      "ApiId": "string",
-      "ApiName": "string",
-      "RootUrl": "string"
-    },
-=======
->>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
     "sakumokiAppUser": {
       "ApiId": "string",
       "ApiName": "string",
@@ -37,16 +24,6 @@ export type AmplifyDependentResourcesAttributes = {
       "LambdaExecutionRoleArn": "string",
       "Name": "string",
       "Region": "string"
-<<<<<<< HEAD
-    },
-    "sakumokiAppuser": {
-      "Arn": "string",
-      "LambdaExecutionRole": "string",
-      "LambdaExecutionRoleArn": "string",
-      "Name": "string",
-      "Region": "string"
-=======
->>>>>>> d3ba60917e6923098cbb9cfb58d2be2ccee778b2
     }
   },
   "storage": {
